@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on Utwoo</title>
+    <link>https://utwoo.github.io/tags/github/</link>
+    <description>Recent content in github on Utwoo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 May 2021 16:09:21 +0800</lastBuildDate><atom:link href="https://utwoo.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Github Actions自动部署Hugo文档</title>
+      <link>https://utwoo.github.io/post/deploy-hugo-by-github-action/</link>
+      <pubDate>Wed, 26 May 2021 16:09:21 +0800</pubDate>
+      
+      <guid>https://utwoo.github.io/post/deploy-hugo-by-github-action/</guid>
+      <description>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。 我们可以使用Hugo配合Github Page方便地搭建自己的博</description>
+    </item>
+    
+  </channel>
+</rss>

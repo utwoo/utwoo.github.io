@@ -13,7 +13,7 @@
       <pubDate>Wed, 26 May 2021 11:58:33 +0800</pubDate>
       
       <guid>https://utwoo.github.io/post/bootstrapping-microservices-chap-8-cn/</guid>
-      <description>当在某个时刻，当手动测试变得繁琐且耗时时，你就会想要转换到自动化测试。当然自动化测试在软件开发领域已经广泛被使用，但是对于微服务，随着应用增</description>
+      <description>微服务的自动化测试 当在某个时刻，当手动测试变得繁琐且耗时时，你就会想要转换到自动化测试。当然自动化测试在软件开发领域已经广泛被使用，但是对于</description>
     </item>
     
   </channel>
