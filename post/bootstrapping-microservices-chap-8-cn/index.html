@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Utwoo" /><meta name="description" content="第八章 微服务的自动化测试 章节内容 微服务的自动化测试 使用Jest进行单体测试和结合测试 使用Cypress进行端对端测试 在持续交付中添加自动化测" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Utwoo" /><meta name="description" content="当在某个时刻，当手动测试变得繁琐且耗时时，你就会想要转换到自动化测试。当然自动化测试在软件开发领域已经广泛被使用，但是对于微服务，随着应用增" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="&lt;Bootstrapping Microservices&gt; #8：微服务的自动化测试" />
-<meta property="og:description" content="第八章 微服务的自动化测试 章节内容 微服务的自动化测试 使用Jest进行单体测试和结合测试 使用Cypress进行端对端测试 在持续交付中添加自动化测" />
+<meta property="og:description" content="当在某个时刻，当手动测试变得繁琐且耗时时，你就会想要转换到自动化测试。当然自动化测试在软件开发领域已经广泛被使用，但是对于微服务，随着应用增" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://utwoo.github.io/post/bootstrapping-microservices-chap-8-cn/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-05-26T11:58:33&#43;08:00" />
 <meta property="article:modified_time" content="2021-05-26T11:58:33&#43;08:00" />
 
 <meta itemprop="name" content="&lt;Bootstrapping Microservices&gt; #8：微服务的自动化测试">
-<meta itemprop="description" content="第八章 微服务的自动化测试 章节内容 微服务的自动化测试 使用Jest进行单体测试和结合测试 使用Cypress进行端对端测试 在持续交付中添加自动化测"><meta itemprop="datePublished" content="2021-05-26T11:58:33&#43;08:00" />
+<meta itemprop="description" content="当在某个时刻，当手动测试变得繁琐且耗时时，你就会想要转换到自动化测试。当然自动化测试在软件开发领域已经广泛被使用，但是对于微服务，随着应用增"><meta itemprop="datePublished" content="2021-05-26T11:58:33&#43;08:00" />
 <meta itemprop="dateModified" content="2021-05-26T11:58:33&#43;08:00" />
-<meta itemprop="wordCount" content="978">
+<meta itemprop="wordCount" content="908">
 <meta itemprop="keywords" content="&lt;Manning Bootstrapping Microservices&gt;," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="&lt;Bootstrapping Microservices&gt; #8：微服务的自动化测试"/>
-<meta name="twitter:description" content="第八章 微服务的自动化测试 章节内容 微服务的自动化测试 使用Jest进行单体测试和结合测试 使用Cypress进行端对端测试 在持续交付中添加自动化测"/>
+<meta name="twitter:description" content="当在某个时刻，当手动测试变得繁琐且耗时时，你就会想要转换到自动化测试。当然自动化测试在软件开发领域已经广泛被使用，但是对于微服务，随着应用增"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/books/"> Books </a>
             </div>
-          <span class="more-meta"> 约 978 字 </span>
+          <span class="more-meta"> 约 908 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
         
       </div>
@@ -143,7 +143,7 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#第八章-微服务的自动化测试">第八章 微服务的自动化测试</a>
+    <li>
       <ul>
         <li><a href="#新的工具">新的工具</a></li>
         <li><a href="#微服务的测试">微服务的测试</a></li>
@@ -155,7 +155,7 @@
   </div>
 </div>
     <div class="post-content">
-      <h1 id="第八章-微服务的自动化测试">第八章 微服务的自动化测试</h1>
+      <p>当在某个时刻，当手动测试变得繁琐且耗时时，你就会想要转换到自动化测试。当然自动化测试在软件开发领域已经广泛被使用，但是对于微服务，随着应用增长它就会变得很有必要。</p>
 <blockquote>
 <p><strong>章节内容</strong></p>
 <ul>
@@ -165,7 +165,6 @@
 <li>在持续交付中添加自动化测试</li>
 </ul>
 </blockquote>
-<p>当在某个时刻，当手动测试变得繁琐且耗时时，你就会想要转换到自动化测试。当然自动化测试在软件开发领域已经广泛被使用，但是对于微服务，随着应用增长它就会变得很有必要。</p>
 <h2 id="新的工具">新的工具</h2>
 <p>Jest是一个用来测试Javascript的工具。
 Cypress是一个用来进行端对端测试的工具。</p>
@@ -182,7 +181,6 @@ Cypress是一个用来进行端对端测试的工具。</p>
 <li>结合测试 —— 测试整个微服务</li>
 <li>端对端测试 —— 测试一组微服务及整个应用(包括前端程序)</li>
 </ul>
-<p>测试金字塔(testing pyramid)：关联各种自动化测试类型，让你了解各种类型有多少测试应该包含在测试套件中。</p>
 <p>自动化测试结合持续交付后就成为了一个提前预警系统。一旦警报运转，我们应该感到庆幸，它给予我们一个停止交付的时机以防止问题蔓延到生产环境并潜在地影响到我们的客户。</p>
 <p>自动化测试无法替代良好的人工探索性测试（例如，手动测试），后者是找到开发团队无法预期到的BUG的唯一途径。</p>
 <p>自动化测试不仅仅可以用来证明代码可以工作，它还可以用来作为宝贵的交流工具，以及一种可执行文档(executable documentation)用来说明代码应该如何被使用。它还提供了一个安全的框架，用于重构和重组你的应用程序。这使你能够不断地朝着更简单、更优雅的体系结构前进。</p>
