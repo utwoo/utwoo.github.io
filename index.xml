@@ -5,6 +5,16 @@
     <link>https://utwoo.github.io/</link>
     <description>Recent content on Utwoo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://utwoo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 26 May 2021 11:58:33 +0800</lastBuildDate><atom:link href="https://utwoo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&lt;Bootstrapping Microservices&gt; #8：微服务的自动化测试</title>
+      <link>https://utwoo.github.io/post/bootstrapping-microservices-chap-8-cn/</link>
+      <pubDate>Wed, 26 May 2021 11:58:33 +0800</pubDate>
+      
+      <guid>https://utwoo.github.io/post/bootstrapping-microservices-chap-8-cn/</guid>
+      <description>第八章 微服务的自动化测试 章节内容 微服务的自动化测试 使用Jest进行单体测试和结合测试 使用Cypress进行端对端测试 在持续交付中添加自动化测</description>
+    </item>
+    
   </channel>
 </rss>
